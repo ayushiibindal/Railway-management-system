@@ -4,7 +4,7 @@ from tabulate import tabulate
 
 
 conn = sql.connect(host='localhost',user='root',passwd='Ayukhu0502.',database='railway_management')
-mycursor = conn.cursor()
+mycursor = conn.cursor() 
 if conn.is_connected():
     print('successfully connected')
 else:
