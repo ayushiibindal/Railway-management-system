@@ -1,8 +1,8 @@
-import mysql.connector
+import mysql.connector as sql
 from tabulate import tabulate
 
 
-conn = mysql.connector.connect(host='localhost',user='root',passwd='Ayukhu0502.',database='railway_management')
+conn = sql.connect(host='localhost',user='root',passwd='Ayukhu0502.',database='railway_management')
 mycursor = conn.cursor()
 if conn.is_connected():
     print('successfully connected')
@@ -215,6 +215,5 @@ while True:
     else:
         print('\nWRONG CHOICE TRY AGAIN')
         continue
-
 
     
